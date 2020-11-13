@@ -1,0 +1,160 @@
+\documentclass[margin,line]{res}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[unicode=true,
+            colorlinks=true,
+            linkcolor=blue]{hyperref}
+\usepackage{longtable}
+\hypersetup{urlcolor=BlueViolet} % Does not apply color to href's
+\hypersetup{colorlinks,urlcolor=BlueViolet} % href's are correct, but navigation
+
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\begin{document}
+\newcommand{\link}[1]{\texttt{#1}}
+\providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+\name{Mike McCarty\vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+%=========INFO=========
+\begin{tabular}{@{}p{2in}p{4in}}
+{\it email:}  mm@mikemccarty.io   & {\it web:} \href{http://mikemccarty.io}{mikemccarty.io} \\
+\end{tabular}
+
+
+%========= RESEARCH =========
+\section{\sc Summary}
+Experienced engineer focused on building Data Science and Machine Learning tools, web services, and cloud computing resources. Solid background in scientific computing, software engineering, open source development, leadership, and mentoring.
+
+%========= WORK EXPERIENCE ==========
+\section{\sc Professional Experience}
+
+%\vspace{-.3cm}
+{\bf Prefect Inc} \\
+{\em Advisory Board Member} \hfill {\bf 2020 - Present}\\
+Technical advisor on product offerings and open source development
+
+%\vspace{-.3cm}
+{\bf Capital One - Center for Machine Learning} \\
+{\em Director of Software Engineering} \hfill {\bf July 2019 - Present}\\
+{\em Senior Manager, Lead Software Engineer} \hfill {\bf Oct 2018 - July 2019}\\
+Drove adoption of Dask and RAPIDS throughout the enterprise leading to
+10-100x computational improvement for model training / predictions
+and scaled train datasets 2 orders of magnitude.
+
+Led organization building and maintaining custom machine learning tools for the enterprise.
+
+Subject matter expert for the PyData and SciPy software stacks.
+
+Contributed to open source projects (Dask, RAPIDS, XGBoost).
+
+%\vspace{-.3cm}
+{\bf Anaconda Inc} \\
+{\em Platform Engineer and Open Source Developer} \hfill {\bf Oct 2017 - Oct 2018}\\
+Platform engineer on enteprise products.
+Open Source developer on data science and machine learning projects.
+
+%\vspace{-.3cm}
+{\bf Morehead State University - Dep. of Mathematics and Physics} - Morehead, KY\\
+{\em Chairman of Advisory Board} \hfill {\bf 2016 - 2017}\\
+
+%\vspace{-.3cm}
+{\bf Zoomdata Inc} - Reston, VA\\
+{\em Senior Software Engineer / Technical Lead} \hfill {\bf Sept 2016 - Oct 2017}\\
+Developed and maintained Zoomdata, a Big Data Business Intelligence tool that is capable of connecting to modern data sources for visualization.
+Led Application Platform development team, consisting of 6 engineers.
+
+%\vspace{-.3cm}
+{\bf Booz Allen Hamilton} - Washington, DC\\
+{\em Lead Engineer} \hfill {\bf Mar 2016 - Sept 2017}\\
+Led development of data management, ingest, analysis, and visualization on TCPI project for the Health and Human Services.
+
+%\vspace{-.3cm}
+{\bf Mission Data} - Washington, DC\\
+{\em Principal Engineer} \hfill {\bf Feb 2015 - Mar 2016}\\
+
+%\vspace{-.3cm}
+{\bf Rivera Group, Inc} - Louisville, KY\\
+{\em Software Architect / Product Development Manager} \hfill {\bf Nov 2013 - Feb 2015}\\
+
+%\vspace{-.3cm}
+{\bf Nub Games, Inc}\\
+{\em Senior Software Engineer} \hfill {\bf Jan 2013 – Nov 2013}\\
+
+%\vspace{-.3cm}
+{\bf National Radio Astronomy Observatory} - Green Bank, WV\\
+{\bf Software Engineer} \hfill {\bf Sept 2010 - Jan 2013}\\
+Green Bank Telescope (GBT) Software Development Division
+
+%\vspace{-.3cm}
+{\bf National Institute for Computational Sciences / Oak Ridge National Lab} - Oak Ridge, TN\\
+{\bf Systems Programmer} \hfill {\bf Aug 2009 - Aug 2010}\\
+High Performance Computing Operations Group
+
+%\vspace{-.3cm}
+{\bf National Radio Astronomy Observatory} - Green Bank, WV\\
+{\bf Software Engineer} \hfill {\bf Oct 2006 - Aug 2009}\\
+Green Bank Telescope (GBT) Software Development Division
+
+%\vspace{-.3cm}
+{\bf National Radio Astronomy Observatory} - Charlottesville, VA\\
+{\bf Software Engineer} \hfill {\bf May 2005 - Sept 2006}\\
+Atacama Large Millimeter Array (ALMA) Front End Integration Center
+
+%========= EDUCATION ==========
+\section{\sc Education}
+
+{\bf University of Illinois}, Urbana-Champaign, IL\\
+%{\em Department of Computer Science}
+\vspace*{-.1in}
+\begin{list1}
+\item[] Graduate Coursework \hfill {\bf 2011}
+\end{list1}
+
+{\bf Morehead State University}, Morehead, KY\\
+%{\em Department of Mathematics and Physics}
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.S., Physics \hfill {\bf 2006}
+\item[] B.S., Computer Science \hfill {\bf 2002}
+\end{list1}
+
+%=========== Skills ================
+\section{\sc Skills}
+
+\input{skills.tex}
+
+
+%========= PUBLICATIONS ==========
+\section{\sc Publications}
+
+\input{publications.tex}
+
+
+%=========== Footer ================
+\end{resume}
+\end{document}
+
